@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Feliz Aniversário, Laila</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #111;
+      color: #fff;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: min(720px, 92vw);
+      background: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    .cover {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      text-align: center;
+      color: #f8e8ff;
+    }
+    p {
+      color: #f0e6ff;
+      line-height: 1.6;
+      margin: 8px 0;
+      white-space: pre-line; /* preserve quebras de linha no trecho longo */
+    }
+    .cta {
+      margin-top: 12px;
+      text-align: center;
+    }
+    .cta button {
+      background: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    audio {
+      width: 100%;
+      outline: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Substitua os caminhos abaixo pelos seus arquivos hospedados -->
+    <img src="capa-laila.jpg" alt="Capa para Laila" class="cover">
+    <h1>Feliz Aniversário, Laila</h1>
+    <p>
+      Laila, meu amor, que cada instante hoje seja tão especial quanto você é para mim. Quero ser o motivo do seu sorriso hoje e sempre. Te adoro infinitamente.
+      
+      Eu queria ser um anjo
+      E não passo apenas do que sou
+      Te daria um par de estrelas
+      E o que tenho é o meu amor
+      Eu só sei sonhar contigo
+      Aceitando o meu regresso
+      Tenho medo de perdê-la
+      Te amo, confesso
+      Aonde estão seus olhos
+      Quando não estão em mim?
+      Aonde estão seus passos
+      Se não chegamos ao fim?
+    </p>
+
+    <div class="cta">
+      <button onclick="document.getElementById('musica').focus()">Reproduzir trilha</button>
+    </div>
+
+    <!-- Substitua o src pelo caminho da música hospedada -->
+    <audio id="musica" controls preload="metadata" src="Victor_e_Leo_Nao_Me_Perdoei.mp3"></audio>
+
+    <p style="font-size:12px; text-align:center; opacity:.8; margin-top:8px;">
+      Música: Victor e Leo – Não Me Perdoei
+    </p>
+  </div>
+</body>
+</html>
